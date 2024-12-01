@@ -142,6 +142,13 @@ public class MyLinkedList<E> implements IList<E> {
         };
     }
 
+    @Override
+    public void clear() {
+        first = null;
+        last = null;
+        size = 0;
+    }
+
     private static class Node<E> {
         E payload;
         Node<E> prev;
